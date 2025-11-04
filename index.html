@@ -195,64 +195,6 @@
             <button onclick="closeModal()">Đóng</button>
         </div>
     </div>
-
-    <!-- Container chính -->
-    <div class="container">
-        <div class="letter closed" id="letter" onclick="openModal()">
-            <!-- Placeholder khi closed để giữ kích thước cân đối -->
-            <div class="placeholder">
-                📮<br>
-                Bình tĩnh khi đọc nhoaa :33<br>
-                (Nhấp để mở)
-            </div>
-            <!-- Nội dung thực khi open -->
-            <div class="letter-content" id="letterContent">
-                Thân chào cogai trong tim em          color: #8b4513;
-            text-align: center;
-        }
-
-        .letter.closed .letter-content {
-            display: none;
-        }
-
-        .letter.open {
-            background-color: #fff8dc;
-            animation: openLetter 0.5s ease;
-        }
-
-        @keyframes openLetter {
-            0% { 
-                transform: rotateY(0deg) scale(1); 
-            }
-            50% { 
-                transform: rotateY(180deg) scale(1.02); 
-            }
-            100% { 
-                transform: rotateY(360deg) scale(1); 
-            }
-        }
-
-        .letter-content {
-            display: none;
-            color: #8b4513; /* Màu nâu đậm cho nội dung thư */
-            line-height: 1.6;
-            font-style: italic;
-            text-align: center;
-            word-wrap: break-word;
-        }
-
-        .letter.open .letter-content {
-            display: block;
-        }
-
-        .letter.open .placeholder {
-            display: none;
-        }
-
-        /* Ẩn thư ban đầu - không cần nữa vì dùng placeholder */
-    </style>
-</head>
-<body>
     <!-- Hiệu ứng confetti rơi liên tục -->
     <div class="confetti-falling" id="confettiFalling"></div>
 
